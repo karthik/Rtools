@@ -23,7 +23,7 @@ This package will allow you to effortlessly document any `R` function. Simply se
       ]   
     }
 </pre>
-3. Change the keyboard shortcut to whatever you like.
+3. Change the keyboard shortcut to whatever you like. In this case `⌘ + alt + shift + R`
 
 4. done!
 

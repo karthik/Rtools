@@ -1,0 +1,13 @@
+
+
+` { "keys": ["super+shift+alt+r"], "command": "r_docs", "context":
+      [
+        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+        {
+        "operand": "source.r",
+        "operator": "equal", 
+        "match_all": true, 
+        "key": "selector"
+         }
+      ]   
+    }`

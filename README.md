@@ -5,8 +5,9 @@ To create roxygen documentation for any function, just select the first line of 
 
 ## Installation
 
-copy Roxygen.py to the User folder (typically found at `~/Library/Application Support/Sublime Text 2/Packages`)
-Next, click `Preferences` > `Key Bindings - User` and paste the snippet below.
+1. copy `Roxygen.py` to the your packages folder (typically found in `~/Library/Application Support/Sublime Text 2/Packages/User`)
+
+2. Next, click `Preferences` > `Key Bindings - User` and paste the snippet below.
 
 <pre>
 
@@ -22,8 +23,9 @@ Next, click `Preferences` > `Key Bindings - User` and paste the snippet below.
       ]   
     }
 </pre>
-Change the keyboard shortcut to whatever you like.
-done!
+3. Change the keyboard shortcut to whatever you like.
+
+4. done!
 
 ## Usage
 

@@ -43,6 +43,6 @@ Select the first line of of a R function definition (e..g `test<- function(x)`),
 #` @export 
 #` @examples
 #`
-test<- function(x)
+test&lt;- function(x)
 </pre>
 

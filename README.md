@@ -32,10 +32,10 @@ This package will allow you to effortlessly document any `R` function. Simply se
 Select the first line of of a R function definition (e..g `test<- function(x)`), press shortcut and it will generate the following template. Both the template and shortcut can be easily customized to your needs (just see the script and edit accordingly).
 
 <pre>
-#' <brief desc>
+#` &lt;brief desc&gt;
 #` 
-#' <full description>
-#' @param x <what param does>
+#` &lt;full description&gt;
+#` @param x &lt;what param does&gt;
 #` @keywords 
 #` @seealso 
 #` @return

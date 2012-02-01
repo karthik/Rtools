@@ -1,7 +1,7 @@
 # Easily add roxygen2 documentation to any R script
 
 I primarily use [Sublime Text 2](http://www.sublimetext.com/) as my primary code editor for `R`.
-This package will allow you to effortlessly document any `R` function. Simply select the first line of the function definition, press a keyboard shortcut, and voila!
+This package will allow you to effortlessly document any `R` function using the `roxygen2` syntax. Simply select the first line of the function definition, press a keyboard shortcut, and voila!
 
 ## Installation
 

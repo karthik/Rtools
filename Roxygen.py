@@ -12,7 +12,7 @@ class RDocsCommand(sublime_plugin.TextCommand):
 
       for p in params:
          snippet += "#' @param %s <what param does>\n" % p
-      
-      snippet+= "#` @keywords \n#` @seealso \n#` @return\n#` @alias\n#` @export \n#` @examples\n#`\n"   
+
+      snippet+= "#` @keywords \n#` @seealso \n#` @return\n#` @alias\n#` @export \n#` @examples\n#`\n"
 
       self.view.insert(edit, sel.begin(), snippet)

@@ -23,7 +23,7 @@ This package will allow you to effortlessly document any `R` function using the 
       ]   
     }
 </pre>
-3. Change the keyboard shortcut to whatever you like. In this case `⌘ + alt + shift + R`
+3. Change the keyboard shortcut to whatever you like. In this case `⌘ + alt + shift + R` (super in ST lingo means ⌘) 
 
 4. done!
 

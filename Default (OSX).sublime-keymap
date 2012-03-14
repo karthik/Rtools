@@ -1,6 +1,5 @@
 [
 { "keys": ["super+enter"], "command": "send_selection" },
-{ "keys": ["super+shift+r"], "command": "send_selection_iterm" },
     {"keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces"},
       { "keys": ["super+shift+/"], "command": "as_above" },
        { "keys": ["super+shift+alt+r"], "command": "r_docs", "context":
@@ -13,5 +12,17 @@
         "key": "selector"
          }
       ]
-    }
+    },
+    { "keys": ["ctrl+shift+'"], "command": "change_quotes" },
+    [
+  { "keys": ["ctrl+alt+c", "ctrl+alt+s"], "command": "convert_to_snake"},
+  { "keys": ["ctrl+alt+c", "ctrl+alt+c"], "command": "convert_to_camel"},
+  { "keys": ["ctrl+alt+c", "ctrl+alt+p"], "command": "convert_to_pascal"}
+  ],
+  { "keys": ["ctrl+shift+r"], "command": "quick_rename" },
+   { "keys": ["super+shift+c"], "command": "git_quick_commit" },
+   { "keys": ["super+shift+/"], "command": "git_push" },
+   [
+  { "keys": ["super+ctrl+a"], "command": "alignment" }
+]
 ]

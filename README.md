@@ -1,7 +1,7 @@
 # Using Sublime Text for coding in R
 I use [Sublime Text 2](http://www.sublimetext.com/) as my primary code editor for `R`. It has now become my swiss knife for all scientific computing. Few key features that make it stand out are full-screen editing with a mini-map, distraction-free editing, and multi-select. In addition, ST2 has numerous packages such as integrated git (commit and push without leaving your editor), markdown preview, syntax highlighting, code formatting and it's easy to code up anything else you might need (like the ones below).
 
-# Script 1:  Easily add roxygen2 documentation to any R script
+# Script 1:  Easily add roxygen2 documentation to any R function.
 This package will allow you to effortlessly document any `R` function using the `roxygen2` syntax. Simply select the first line of the function definition, press a keyboard shortcut, and voila!
 
 ### Installation

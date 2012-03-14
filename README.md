@@ -29,8 +29,6 @@ This package will allow you to effortlessly document any `R` function using the 
 
 Select the first line of of a R function definition (e..g `test<- function(x)`), press shortcut and it will generate the following template. Both the template and shortcut can be easily customized to your needs (just see the script and edit accordingly). The script will automatically populate all of the function arguments into the documentation. You can customize `roxygen` tags by editing `Roxygen.py`
 
-<hr>
-
 <pre>
 #'&lt;brief desc&gt;
 #'
@@ -44,6 +42,8 @@ Select the first line of of a R function definition (e..g `test<- function(x)`),
 #'@examples
 #'test&lt;- function(x)
 </pre>
+
+<hr>
 
 # Script 2 - Send selection to R
 A short script to send any selected r code to R.

@@ -1,6 +1,7 @@
 # Rtools for Sublime Text 2
 This package provides a couple of useful tools for people using [Sublime Text 2](http://www.sublimetext.com/) to code in `R`. It has the key bindings to send a selection of code to R, and can also generate [Roxygen documentation](http://cran.r-project.org/package=roxygen2
-) templates for any function quickly.
+) templates for any function quickly (select first line of a function till the first `{`, press keybinding and it will generate a template with `@params` from the function definition).
+
 I plan to add functionality of [formatR](http://cran.r-project.org/package=formatR
 ) so you format/tidy code inline to the next version. Please suggest other feature requests here.
 

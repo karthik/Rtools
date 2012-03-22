@@ -4,7 +4,7 @@ This package provides a couple of useful tools for people using ST2 to code in R
 I plan to add functionality of [formatR](http://cran.r-project.org/package=formatR
 ) to future versions. Please suggest other requests here.
 
-To install, just clone this repo into your sublime text 2/packages directory
+To install, just clone this repo into your `Sublime Text 2/packages` directory
 
 ```
 git clone git@github.com:karthikram/Rtools.git

@@ -11,7 +11,7 @@ To install, just clone this repo into your `Sublime Text 2/packages` directory
 git clone git@github.com:karthikram/Rtools.git
 ```
 
-Once this becomes approved in package control, you should just be able to do it from the command palette (open command palette, type in Install Pacakges, and once list is populated look for Rtools)
+Once this becomes approved in package control, you should just be able to do it from the command palette (open command palette, type in Install Pacakges, and once list is populated look for `Rtools`)
 
 ## Customization
 
@@ -21,6 +21,4 @@ Once this becomes approved in package control, you should just be able to do it 
 
 ## Key bindings
 
-To preserve or change these key bindings, copy them to your user file.
-
-
+To preserve or change these key bindings, copy them to your `Key Bindings - User` file.

@@ -5,13 +5,17 @@ This package provides a couple of useful tools for people using [Sublime Text 2]
 I plan to add functionality of [formatR](http://cran.r-project.org/package=formatR
 ) so you format/tidy code inline to the next version. Please suggest other feature requests here.
 
-To install, just clone this repo into your `Sublime Text 2/packages` directory
+# Installation
+
+Installing via Package Control: The fastest way to install is via the command palette (open command palette, type in Install Pacakges, and once list is populated look for `R tools`)
+
+If you don't have package control installed, the just clone this repo into your `Sublime Text 2/packages` directory
 
 ```
 git clone git@github.com:karthikram/Rtools.git
 ```
 
-Once this becomes approved in package control, you should just be able to do it from the command palette (open command palette, type in Install Pacakges, and once list is populated look for `Rtools`)
+
 
 ## Customization
 

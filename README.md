@@ -7,7 +7,7 @@ I plan to add functionality of [formatR](http://cran.r-project.org/package=forma
 
 # Installation
 
-Installing via Package Control: The fastest way to install is via the command palette (open command palette, type in Install Pacakges, and once list is populated look for `R tools`)
+Installing via Package Control: The fastest way to install is via the command palette (open command palette, type in Install Packages, and once list is populated look for `R tools`)
 
 If you don't have package control installed, the just clone this repo into your `Sublime Text 2/packages` directory
 

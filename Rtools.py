@@ -37,12 +37,13 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
             selection += self.view.substr(region) + "\n"
         selection = (selection[::-1].replace('\n'[::-1], '', 1))[::-1]
 
-      # only proceed if selection is not empty
+        # only proceed if selection is not empty
         if(selection != ""):
-            extension = os.path.splitext(self.view.file_name())[1]
+            # get name of syntax file
+            lang = self.view.settings().get('syntax')
 
         # R file
-        if(extension.lower() == ".r"):
+        if "R.tmLanguage" in lang:
             # define list of arguments
             args = ['osascript', '-e', 'tell app "R64" to activate']
             # split selection into lines

@@ -44,13 +44,14 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
 
         # R file
         if "R.tmLanguage" in lang:
-            # define list of arguments
-            args = ['osascript', '-e', 'tell app "R64" to activate']
             # split selection into lines
             selection = self.cleanString(selection).split("\n")
+            # define osascript arguments
+            args = ['osascript', '-e', 'tell app "R64" to activate']
             # add code lines to list of arguments
             for part in selection:
                 args.extend(['-e', 'tell app "R64" to cmd "' + part + '"\n'])
-            # execute code and activate ST2
-            p = subprocess.Popen(args)
-            subprocess.Popen("""osascript -e 'tell app "Sublime Text 2" to activate' """, shell=True)
+            # activate ST2
+            args.extend(['-e', 'tell app "Sublime Text 2" to activate'])
+            # execute code
+            subprocess.Popen(args)

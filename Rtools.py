@@ -38,9 +38,11 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
         selection = (selection[::-1].replace('\n'[::-1], '', 1))[::-1]
 
         # only proceed if selection is not empty
-        if(selection != ""):
-            # get name of syntax file
-            lang = self.view.settings().get('syntax')
+        if(selection == ""):
+            return
+
+        # get name of syntax file
+        lang = self.view.settings().get('syntax')
 
         # R file
         if "R.tmLanguage" in lang:

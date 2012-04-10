@@ -47,11 +47,9 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
             # split selection into lines
             selection = self.cleanString(selection).split("\n")
             # define osascript arguments
-            args = ['osascript', '-e', 'tell app "R64" to activate']
+            args = ['osascript']
             # add code lines to list of arguments
             for part in selection:
                 args.extend(['-e', 'tell app "R64" to cmd "' + part + '"\n'])
-            # activate ST2
-            args.extend(['-e', 'tell app "Sublime Text 2" to activate'])
             # execute code
             subprocess.Popen(args)

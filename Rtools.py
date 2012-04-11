@@ -31,6 +31,10 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
         return str
 
     def run(self, edit):
+        # Check if it's an R file
+        if "R.tmLanguage" not in self.view.settings().get('syntax'):
+            return
+
         # get selection
         selection = ""
         for region in self.view.sel():
@@ -46,20 +50,15 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
         if(selection == ""):
             return
 
-        # get name of syntax file
-        lang = self.view.settings().get('syntax')
-
-        # R file
-        if "R.tmLanguage" in lang:
-            # split selection into lines
-            selection = self.cleanString(selection).split("\n")
-            # define osascript arguments
-            args = ['osascript']
-            # add code lines to list of arguments
-            for part in selection:
-                args.extend(['-e', 'tell app "R64" to cmd "' + part + '"\n'])
-            # execute code
-            subprocess.Popen(args)
+        # split selection into lines
+        selection = self.cleanString(selection).split("\n")
+        # define osascript arguments
+        args = ['osascript']
+        # add code lines to list of arguments
+        for part in selection:
+            args.extend(['-e', 'tell app "R64" to cmd "' + part + '"\n'])
+        # execute code
+        subprocess.Popen(args)
 
 
     def advanceCursor(self, region):

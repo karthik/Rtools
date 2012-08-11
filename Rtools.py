@@ -74,3 +74,19 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
         # Remove the old region and add the new one
         self.view.sel().subtract(region)
         self.view.sel().add(sublime.Region(loc, loc))
+
+class SourceFileCommand(sublime_plugin.WindowCommand):
+    def run(self, cmd="", file_regex="", path=""):
+        view = self.window.active_view()
+
+        if "R.tmLanguage" not in view.settings().get('syntax'):
+            return
+
+        if view.is_dirty():
+            view.run_command('save')
+
+        path = view.file_name()
+        cmd = "source('" + path + "')"
+        args = ['osascript', '-e', 'tell app "R64" to cmd "' + cmd + '"\n']
+        subprocess.Popen(args)
+

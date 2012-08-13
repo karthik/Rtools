@@ -1,6 +1,5 @@
 [
 { "keys": ["super+enter"], "command": "send_selection" },
-{ "keys": ["super+b"], "command": "source_file" },
 { "keys": ["super+shift+alt+r"], "command": "r_docs", "context":
       [
         { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },

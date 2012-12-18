@@ -32,7 +32,8 @@ class SendSelectionCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         # Check if it's an R file
-        if "R.tmLanguage" not in self.view.settings().get('syntax'):
+        filescope = self.view.syntax_name(self.view.sel()[0].b)
+        if ("source.r " not in filescope) and ("source.r." not in filescope):
             return
 
         # get selection
